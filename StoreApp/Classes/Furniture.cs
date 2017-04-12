@@ -21,9 +21,9 @@ namespace StoreApp.Classes
 
         public Furniture(decimal price, string descriptions)
         {
-            this.price = this.price;
-            this.description = this.description;
-            this.modelNum = this.modelNum;
+            this.price = price;
+            this.description = description;
+            this.modelNum = modelNum;
         }
 
         public decimal Price

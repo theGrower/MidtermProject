@@ -1,2 +1,7 @@
 C:\Git\MidtermProject\StoreApp\bin\Debug\StoreApp.exe.config
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\bin\Debug\StoreApp.exe.config
+C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.csprojResolveAssemblyReference.cache
+C:\Git\MidtermProject\StoreApp\bin\Debug\StoreApp.exe
+C:\Git\MidtermProject\StoreApp\bin\Debug\StoreApp.pdb
+C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.exe
+C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.pdb

@@ -8,6 +8,6 @@ namespace StoreApp.Classes
 {
     public class Seating : Furniture
     { 
-        private 
+        //private 
     }
 }

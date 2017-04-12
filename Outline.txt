@@ -1,9 +1,9 @@
 Enum Color ( black , blue , red, yellow, orange, green )
 		      0        1	2	   3	  4	       5
-enum pullsStyle (none, steel, stainless, copper, round, square)
-enum pullsCollor (none, black, …..)
-enum legStyle (…..)
-enum seatingSeatHeight (adjustable, not_adjustable)
+enum pullsStyle {none, steel, stainless, copper, round, square}
+enum pullsCollor {none, black, …..}
+enum legStyle {…..}
+enum seatingSeatHeight {adjustable, not_adjustable}
     enum Suits { Clubs, Diamonds, Hearts, Spades };
     enum Ranks { Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace };
 

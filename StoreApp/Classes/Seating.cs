@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace StoreApp.Classes
 {
     public class Seating : Furniture
-    {
-
+    { 
+        private 
     }
 }

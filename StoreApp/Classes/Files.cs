@@ -8,35 +8,42 @@ namespace StoreApp.Classes
 {
     class Files : Furniture
     {
-        private int LateralOrVertical;
-        private int Tower;
-        private int PullStyle;
-        private int PullColor;
+        private int fileType;
+        private int tower;
+        private int pullStyle;
+        private int pullColor;
 
         public Files()
         {
-            this.LateralOrVertical = 0;
-            this.Tower = 0;
-            this.PullStyle = 0;
-            this.PullColor = 0;
+            this.fileType = 0;
+            this.tower = 0;
+            this.pullStyle = 0;
+            this.pullColor = 0;
         }
-
-        public int lateralOrVertical
+          public Files(int fileType, int pullStyle, int pullColor, int tower)
         {
-            get { return lateralOrVertical; }
-            set { lateralOrVertical = value; }
+            this.fileType = fileType;
+            this.pullStyle = pullStyle;
+            this.pullColor = pullColor;
+            this.tower = tower;
         }
-        public int tower
+        
+        public int FileType
+        {
+            get { return fileType; }
+            set { fileType = value; }
+        }
+        public int Tower
         {
             get { return tower; }
             set { tower = value; }
         }
-        public int pullStyle
+        public int PullStyle
         {
             get { return pullStyle; }
             set { pullStyle = value; }
         }
-        public int pullColor
+        public int PullColor
         {
             get { return pullColor; }
             set { pullColor = value; }

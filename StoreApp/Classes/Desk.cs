@@ -6,60 +6,65 @@ using System.Threading.Tasks;
 
 namespace StoreApp.Classes
 {
-    class Desk
-
+    public class Desk : Furniture
     {
-        public class Desking : Furniture
-        {
-            private int drawers;
-            private int pullStyle;
-            private int pullsColor;
-            private int color;
-            private int depth;
-            private int width;
+        private int drawers;
+        private int pullStyle;
+        private int pullColor;
+        private int color;
+        private int depth;
+        private int width;
 
-        }
         public Desk()
         {
-            this.Drawers = 0;
-            this.PullStyle = 0;
-            this.PullColor = 0;
-            this.Color = 0;
-            this.Depth = 0;
-            this.Width = 0;
+            this.drawers = 0;
+            this.pullStyle = 0;
+            this.pullColor = 0;
+            this.color = 0;
+            this.depth = 0;
+            this.width = 0;
+        }
+        public Desk(int drawers, int pullStyle, int pullColor, int color, int depth, int width)
+        {
+            this.drawers = drawers;
+            this.pullStyle = pullStyle;
+            this.pullColor = pullColor;
+            this.color = color;
+            this.depth = depth;
+            this.width = width;
         }
         public int Drawers
         {
-            get { return Drawers; }
-            set { Drawers = value; }
+            get { return drawers; }
+            set { drawers = value; }
         }
         public int PullStyle
         {
-            get { return PullStyle; }
-            set { PullStyle = value; }
+            get { return pullStyle; }
+            set { pullStyle = value; }
         }
         public int PullColor
         {
-            get { return PullColor; }
-            set { PullColor = value; }
+            get { return pullColor; }
+            set { pullColor = value; }
         }
         public int Color
         {
-            get { return Color; }
-            set { Color = value; }
+            get { return color; }
+            set { color = value; }
         }
         public int Depth
         {
-            get { return Depth; }
-            set { Depth = value; }
+            get { return depth; }
+            set { depth = value; }
         }
         public int Width
         {
-            get { return Width; }
-            set { Width = value; }
+            get { return width; }
+            set { width = value; }
         }
     }
 }
- 
+
 //enum pullsColor(none, black, silver, crome, brushedcrome)
 //enum pullsStyle(none, contemporary, cscape, jazz, bar)

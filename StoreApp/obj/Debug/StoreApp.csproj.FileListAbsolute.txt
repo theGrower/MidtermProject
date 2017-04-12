@@ -1,1 +1,2 @@
 C:\Git\MidtermProject\StoreApp\bin\Debug\StoreApp.exe.config
+C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\bin\Debug\StoreApp.exe.config

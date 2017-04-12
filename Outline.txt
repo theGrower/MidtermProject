@@ -1,0 +1,77 @@
+Enum Color ( black , blue , red, yellow, orange, green )
+		      0        1	2	   3	  4	       5
+enum pullsStyle (none, steel, stainless, copper, round, square)
+enum pullsCollor (none, black, …..)
+enum legStyle (…..)
+enum seatingSeatHeight (adjustable, not_adjustable)
+    enum Suits { Clubs, Diamonds, Hearts, Spades };
+    enum Ranks { Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace };
+
+
+Class Furniture
+	decimal price
+	string description 
+	int modelNumber (Auto generate based on other properties?)
+
+	methods? 
+
+Class Seating : Furniture
+	int adjSeatHeight
+	int adjSeatDepth
+	int adjArms
+	int castersOrGlides
+	int VBS
+	int color
+
+Class Desks : Furniture
+	int draws //number of draws
+	int pullsStyle //different using enum
+	int pullsColor //different using enum
+	int color
+	int depth
+	int width
+	
+
+class Files : Furniture 
+	int lateralOrVertical
+	int tower //0 vs 1
+	int pullsStyle //different using enum
+	int pullsColor //different using enum
+	
+
+class Tables : Furniture
+	int material //0 wood, 1 laminate 
+	int color
+	int legStyle //use enum
+	int length
+	int width
+
+
+
+	ASSIGNMENTS 
+Build the classes  Kaitlyn/Gayle 
+Build the enums  Gayle
+build the txt file Gayle
+
+Upon build/run of the program we need to read from the txt file and place the various times into appropriate arrays. 
+	This process should a method of its own. (Jeff)
+	
+	
+
+We need to greet the customer. (Kaitlyn, Gayle)
+
+Allow them to begin “Browsing” the catalog. …. 
+	sort-able by furniture class. 
+		Once we have the type, by the different properties of each class. 
+		Even by price. (Jeff)
+
+We have to a “go back” to return to higher menu. (Jeff)
+
+
+As they go along add items w/ quantities & Price they want. Jeff
+
+Review cart at the end - Jeff
+
+buy. (check, credit card, cash)… Kaitlyn
+
+Receipt .. Kaitlyn  

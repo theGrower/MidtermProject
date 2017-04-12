@@ -1,0 +1,4 @@
+Seating, executive| 150.00, 1, 0, 0, 3, this chair is awesome Trump Loves it!
+Seating, sensor, 400.00, this chair senses when you sweat and gives a beer. 
+Desk, Executive, 800.00, this is the greatest desk. Believe me. 
+File, black, 400.00, has 4 draws, one dedicated to hanging folders

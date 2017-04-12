@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{051AA200-ED1D-4BBA-9D1B-AE1DC224CF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cart", "Cart\Cart.csproj", "{A4B3A9B5-7888-436C-B5DC-EAB72E2A2E45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F0283E82-4D3C-4C04-91E6-31B9392EA4FF}"
+	ProjectSection(SolutionItems) = preProject
+		Furniture.txt = Furniture.txt
+		Outline.txt = Outline.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckingOut", "CheckingOut\CheckingOut.csproj", "{62F67595-16CF-4EDA-AF05-D5994CA56EE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{051AA200-ED1D-4BBA-9D1B-AE1DC224CF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051AA200-ED1D-4BBA-9D1B-AE1DC224CF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051AA200-ED1D-4BBA-9D1B-AE1DC224CF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051AA200-ED1D-4BBA-9D1B-AE1DC224CF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B3A9B5-7888-436C-B5DC-EAB72E2A2E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B3A9B5-7888-436C-B5DC-EAB72E2A2E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B3A9B5-7888-436C-B5DC-EAB72E2A2E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B3A9B5-7888-436C-B5DC-EAB72E2A2E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F67595-16CF-4EDA-AF05-D5994CA56EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F67595-16CF-4EDA-AF05-D5994CA56EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F67595-16CF-4EDA-AF05-D5994CA56EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F67595-16CF-4EDA-AF05-D5994CA56EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

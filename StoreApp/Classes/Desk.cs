@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace StoreApp.Classes
 {
     class Desk
+
     {
         public class Desking : Furniture
         {
@@ -59,3 +60,6 @@ namespace StoreApp.Classes
         }
     }
 }
+ 
+//enum pullsColor(none, black, silver, crome, brushedcrome)
+//enum pullsStyle(none, contemporary, cscape, jazz, bar)

@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckingOut
+namespace StoreApp.Classes
 {
-    class Program
+    public class Seating : Furniture
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }

@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cart
+namespace StoreApp.Classes
 {
-    class Program
+    public class Furniture
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

@@ -22,6 +22,14 @@ namespace StoreApp.Classes
             this.length = 0;
             this.width = 0;
         }
+        public Tables(int material, int color, int legStyle, int length, int width)
+        {
+            this.material = material;
+            this.color = color;
+            this.legStyle = legStyle;
+            this.length = length;
+            this.width = width;
+        }
         public int Material
         {
             get { return material; }

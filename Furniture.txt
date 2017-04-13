@@ -1,4 +1,16 @@
-Seating, executive| 150.00, 1, 0, 0, 3, this chair is awesome Trump Loves it!
-Seating, sensor, 400.00, this chair senses when you sweat and gives a beer. 
-Desk, Executive, 800.00, this is the greatest desk. Believe me. 
-File, black, 400.00, has 4 draws, one dedicated to hanging folders
+Seating|Leap|1200.00|With an exceptional range of adjustments, Leap delivers full support for various body shapes and sizes. 
+Seating|Sensor|950.00|A fully loaded seating that forms to your body.
+Seating|Cobi|625.00|Perfect solution for meetings and conference rooms.
+Seating|Nobe|530.00|Healthcare experience for clinicians, patients and family members. 
+Seating|Gesture|760.00|The first chair designed to support our interactions with today's technologies.
+Desk|Answer|475.00|Answer solutions offer a range of applications, aesthetics, technology integration and adaptability, optimizing the performance of the workforce and workplace
+Desk|Ology|825.00| Make the workplace a more health-conscious environment.
+Desk|Frame 1|1395.00|FrameOne supports a wide range of work styles, adding versatility to any work environment. 
+Desk|CScape|685.00|Modular office workstation is a freestanding desking system with built-in office storage, perfect for both open plan and private offices. 
+Files|Storage|999.00|Is our most versatile and extensive storage offering. It expands what storage can do
+Files|Pedestal|415.00|Our most versatile and extensive storage offering, expands what storage can do
+Files|Tower|1122.00|Our most versatile and extensive storage offering, expands what storage can do
+Tables|Potrero|595.00|A refreshing antidote to the conventional conference-room.
+Tables|Ballet|732.00|Beautiful and functional solution to training and conference room spaces.
+Tables|Glass|855.00|Glass Coffee Table is the ideal contemporary piece to anchor your space.
+Tables|Universal|1600.00|Beautiful conference table

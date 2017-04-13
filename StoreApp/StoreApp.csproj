@@ -49,6 +49,7 @@
     <Compile Include="Classes\Furniture.cs" />
     <Compile Include="Classes\Seating.cs" />
     <Compile Include="Classes\Tables.cs" />
+    <Compile Include="FurnitureEnums\FurnitureEnums.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

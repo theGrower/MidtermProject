@@ -75,3 +75,6 @@ Review cart at the end - Jeff
 buy. (check, credit card, cash)… Kaitlyn
 
 Receipt .. Kaitlyn  
+
+
+        public string Description {get; set;}

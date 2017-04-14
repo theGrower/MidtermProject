@@ -8,12 +8,12 @@ using StoreApp.FurnitureEnums;
 
 namespace StoreApp.Methods
 {
-    enum pullsColor { black, brushed, chrome, silver }
-    enum pullsStyle { bar, contemporary, cscape, jazz }
-    enum legStyle { cscape, frameone, ology, tbase, unimas }
-    enum color { black, blue, green, orange, pink, white }
-    enum material { laminate, wood }
-    enum fileType { pedestal, storage, tower }
+    //enum pullsColor { black, brushed, chrome, silver }
+    //enum pullsStyle { bar, contemporary, cscape, jazz }
+    //enum legStyle { cscape, frameone, ology, tbase, unimas }
+    //enum color { black, blue, green, orange, pink, white }
+    //enum material { laminate, wood }
+    //enum fileType { pedestal, storage, tower }
 
     class UserDeskChoice
     {

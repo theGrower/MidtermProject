@@ -7,6 +7,15 @@ using StoreApp.Classes;
 
 namespace StoreApp.Methods
 {
+    enum pullsColor { black, brushed, chrome, silver }
+    enum pullsStyle { bar, contemporary, cscape, jazz }
+    enum legStyle { cscape, frameone, ology, tbase, unimas }
+    enum color { black, blue, green, orange, pink, white }
+    enum material { laminate, wood }
+    enum fileType { pedestal, storage, tower }
+
+    // only need color, pull style, pull colour 
+
     class UserFilesChoice
     {
         static void UserFilesiChoice() //these may need to be objects in the as they'll create the client's furniture && add to cart

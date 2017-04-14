@@ -7,3 +7,4 @@ C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.exe
 C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.pdb
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.exe
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.pdb
+C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.csprojResolveAssemblyReference.cache

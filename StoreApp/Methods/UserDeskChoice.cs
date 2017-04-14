@@ -35,6 +35,12 @@ namespace StoreApp.Methods
                 var deskPullStyle = Console.ReadLine();
                 Console.Write("Please choose a pull color: ");
                 var deskPullColor = Console.ReadLine();
+                Console.WriteLine("Would you like a center drawer? yes or no");
+                var drawers = Console.ReadLine();
+                Console.WriteLine("What depth size would you like? 24 or 30");
+                var depth = Console.ReadLine();
+                Console.WriteLine("What width size would you like? 48 or 60 ");
+                var width = Console.ReadLine();
                 //go through Drawers, depth, width like above and get the user's choice with a var VariableName = COnsole.Read....
             }
             else if (Validator.ParceDeskChoice(userDeskChoice) == Classes.UserDeskChoice.CSCAPE)

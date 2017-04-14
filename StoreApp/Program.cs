@@ -14,7 +14,7 @@ namespace StoreApp
     {
         static void Main(string[] args)
         {
-            CreateArrays(); // this method is broken 
+
             Cart cart = new Classes.Cart();
             Greeting();
             UserFurnChoice();
@@ -25,7 +25,7 @@ namespace StoreApp
         {
             Console.WriteLine("Hello! Thank you for visiting our furniture store! Our store offers office furniture designed with you in mind.");
             Console.WriteLine("We have a selection of desks, files, seating, and tables to meet your office needs.");
-            Console.WriteLine("Let's get started! Please type the catagory you would like to expore first: \"desks\", \"files\", \"seating\", or \"table\": ");
+            Console.Write("Let's get started! Please type the catagory you would like to expore first: \"desks\", \"files\", \"seating\", or \"table\": ");
         }
         
         static void ReturnText() //figure out how to return to various steps in the process... 
@@ -39,8 +39,19 @@ namespace StoreApp
             userFurnChoice = Console.ReadLine();
             if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.DESK)
             {
-                // go through Desks options
                 Console.Clear();
+                var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
+
+                Console.WriteLine("You've chosen to explore our desks! Here is a list of our desks.");
+                Console.WriteLine("Our {0} desk costs ${1}.", productList[0][1], productList[0][2]);
+                Console.WriteLine("Description: {0}", productList[0][3]);
+                Console.WriteLine("Our {0} desk costs ${1}.", productList[1][1], productList[1][2]);
+                Console.WriteLine("Description: {0}", productList[1][3]);
+                Console.WriteLine("Our {0} desk costs ${1}.", productList[2][1], productList[2][2]);
+                Console.WriteLine("Description: {0}", productList[2][3]);
+                Console.WriteLine("Our {0} desk costs ${1}.", productList[3][1], productList[3][2]);
+                Console.WriteLine("Description: {0}", productList[3][3]);
+                Console.Write("Would you like to pruchase one of these desks? (y/n): ");
             }
             else if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.FILES)
             {
@@ -153,7 +164,7 @@ namespace StoreApp
             else if (Validator.ParceSeatChoice(userSeatChoice) == Classes.UserSeatChoice.NOT_RECOGNIZED)
             {
                 Console.Write("Invalid Entry, please try again: ");
-                UserFilesChoice();
+                UserSeatChoice();
             }
         }
 
@@ -184,31 +195,31 @@ namespace StoreApp
             else if (Validator.ParceTablesChoice(userTablesChoice) == Classes.UserTablesChoice.NOT_RECOGNIZED)
             {
                 Console.Write("Invalid Entry, please try again: ");
-                UserFilesChoice();
+                UserTablesChoice();
             }
         }
 
         static List<Furniture> CreateArrays()
         {
-            StreamReader furnitureText = null;
+            StreamReader furnitureText;
             List<Furniture> productList = new List<Furniture>();
-            string[] columns = null;
-            string row = null;
+            string[] columns;
+            string row;
             
             furnitureText = new StreamReader(new FileStream((@"C:\Git\MidtermProject\Furniture.txt"), FileMode.Open, FileAccess.Read));
-            while (furnitureText.Peek() !=1)
+            while (furnitureText.Peek() != -1)
             {
                 row = furnitureText.ReadLine();
-                columns = row.Split('|'); //still not working
-                Furniture furniture = new Furniture();
-                furniture.Type = columns[0];
-                furniture.Name = columns[1];
-                furniture.Price = decimal.Parse(columns[2]);
-                furniture.Description = columns[3];
-                productList.Add(furniture);
+                    columns = row.Split('|'); //still not working
+                    Furniture furniture = new Furniture();
+                    furniture.Type = columns[0];
+                    furniture.Name = columns[1];
+                    furniture.Price = decimal.Parse(columns[2]);
+                    furniture.Description = columns[3];
+                    productList.Add(furniture);
             }
             return productList;
-            furnitureText.Close();
+            //furnitureText.Close(); put in try/finally
         }
 
         static void DesksChoice()
@@ -216,6 +227,7 @@ namespace StoreApp
             var Desks = new List<string>();
             Console.WriteLine("You've chosen to explore our desks! Here is a list of our customizable desks.");
             foreach (var desk in Desks)
+            
             {
                 Console.WriteLine("put the list elements here {0} {1} {2} {3}");
                 //will need validator for choices, then go though choices.... 

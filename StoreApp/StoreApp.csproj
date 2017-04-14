@@ -51,6 +51,11 @@
     <Compile Include="Classes\Tables.cs" />
     <Compile Include="Classes\Validator.cs" />
     <Compile Include="FurnitureEnums\FurnitureEnums.cs" />
+    <Compile Include="Methods\UserDeskChoice.cs" />
+    <Compile Include="Methods\UserFilesChoice.cs" />
+    <Compile Include="Methods\UserFurnChoice.cs" />
+    <Compile Include="Methods\UserSeatChoice.cs" />
+    <Compile Include="Methods\UserTablesChoice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

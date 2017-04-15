@@ -15,12 +15,11 @@ namespace StoreApp.Methods
             Console.Write("Please type the catagory you would like to expore: \"desks\", \"files\", \"seating\", or \"table\": ");
             string userFurnChoice = null;
             userFurnChoice = Console.ReadLine();
-            if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.DESK)
+            if (Validator.ParseFurnChoice(userFurnChoice) == FurnitureEnums.FurnitureEnums.UserFurnChoice.DESK)
             {
-                StoreApp.Methods.DeskChoice.UserDeskChoice();
-
+                DeskChoice.UserDeskChoice();
             }
-            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.FILES)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == FurnitureEnums.FurnitureEnums.UserFurnChoice.FILES)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -33,7 +32,7 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[6][3]);
                 Console.Write("Would you like to purchase one of these files? (y/n): ");
             }
-            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.SEATING)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == FurnitureEnums.FurnitureEnums.UserFurnChoice.SEATING)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -50,7 +49,7 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[11][3]);
                 Console.Write("Would you like to purchase seating? (y/n): ");
             }
-            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.TABLES)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == FurnitureEnums.FurnitureEnums.UserFurnChoice.TABLES)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -65,7 +64,7 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[15][3]);
                 Console.Write("Would you like to purchase one of these tables? (y/n): ");
             }
-            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.NOT_RECOGNIZED)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == FurnitureEnums.FurnitureEnums.UserFurnChoice.NOT_RECOGNIZED)
             {
                 Console.WriteLine("Invalid Entry, please try again. Press Enter to continue.");
                 Console.ReadLine();

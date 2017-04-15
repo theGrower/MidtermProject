@@ -21,7 +21,7 @@ namespace StoreApp
             string[] columns;
             string row;
             furnitureText = new StreamReader(new FileStream((@"C:\Git\MidtermProject\Furniture.txt"), FileMode.Open, FileAccess.Read));
-            //furnitureText = new StreamReader(new FileStream((@"C:\Users\ghouck\Document\GitHub\MidtermProject\Furniture.txt"), FileMode.Open, FileAccess.Read));
+            //furnitureText = new StreamReader(new FileStream((@"C:\Users\ghouck\Documents\GitHub\MidtermProject\Furniture.txt"), FileMode.Open, FileAccess.Read));
             while (furnitureText.Peek() != -1)
             {
                 row = furnitureText.ReadLine();

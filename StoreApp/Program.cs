@@ -230,6 +230,7 @@ namespace StoreApp
 
                 Console.Write(" Would you like to start a new order? (y/n): ");
                 yesNo = Console.ReadLine();
+                Console.Clear();
             }
             while (yesNo.ToLower() == "y");
             Console.Read();

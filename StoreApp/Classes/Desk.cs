@@ -24,7 +24,7 @@ namespace StoreApp.Classes
             this.depth = 0;
             this.width = 0;
         }
-        public Desk(string type, string name, decimal price, string descriptions, int drawers, int pullStyle, int pullColor, int color, int depth, int width)
+        public Desk(string name, decimal price, string descriptions, int drawers, int pullStyle, int pullColor, int color, int depth, int width)
         {
             this.drawers = drawers;
             this.pullStyle = pullStyle;
@@ -65,6 +65,3 @@ namespace StoreApp.Classes
         }
     }
 }
-
-//enum pullsColor(none, black, silver, crome, brushedcrome)
-//enum pullsStyle(none, contemporary, cscape, jazz, bar)

@@ -8,28 +8,19 @@ using System.IO;
 
 namespace StoreApp.Methods
 {
-    class UserFurnChoice
+    class FurnChoice
     {
-        static void UserFurniChoice() //these may need to be objects in the as they'll create the client's furniture && add to cart
+        public static void UserFurnChoice() 
         {
+            Console.Write("Please type the catagory you would like to expore: \"desks\", \"files\", \"seating\", or \"table\": ");
             string userFurnChoice = null;
             userFurnChoice = Console.ReadLine();
-            if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.DESK)
+            if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.DESK)
             {
-                Console.Clear();
-                var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
-                Console.WriteLine("You've chosen to explore our desks! Here is a list of our desk selections.");
-                Console.WriteLine("Our {0} desk costs ${1}.", productList[0][1], productList[0][2]);
-                Console.WriteLine("Description: {0}", productList[0][3]);
-                Console.WriteLine("Our {0} desk costs ${1}.", productList[1][1], productList[1][2]);
-                Console.WriteLine("Description: {0}", productList[1][3]);
-                Console.WriteLine("Our {0} desk costs ${1}.", productList[2][1], productList[2][2]);
-                Console.WriteLine("Description: {0}", productList[2][3]);
-                Console.WriteLine("Our {0} desk costs ${1}.", productList[3][1], productList[3][2]);
-                Console.WriteLine("Description: {0}", productList[3][3]);
-                Console.Write("Would you like to purchase one of these desks? (y/n): ");
+                StoreApp.Methods.DeskChoice.UserDeskChoice();
+
             }
-            else if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.FILES)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.FILES)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -42,7 +33,7 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[6][3]);
                 Console.Write("Would you like to purchase one of these files? (y/n): ");
             }
-            else if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.SEATING)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.SEATING)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -59,7 +50,7 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[11][3]);
                 Console.Write("Would you like to purchase seating? (y/n): ");
             }
-            else if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.TABLES)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.TABLES)
             {
                 Console.Clear();
                 var productList = File.ReadAllLines(@"C:\Git\MidtermProject\Furniture.txt").Select(l => l.Split('|')).ToArray();
@@ -74,10 +65,11 @@ namespace StoreApp.Methods
                 Console.WriteLine("Description: {0}", productList[15][3]);
                 Console.Write("Would you like to purchase one of these tables? (y/n): ");
             }
-            else if (Validator.ParceFurnChoice(userFurnChoice) == Classes.UserFurnChoice.NOT_RECOGNIZED)
+            else if (Validator.ParseFurnChoice(userFurnChoice) == StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.NOT_RECOGNIZED)
             {
-                Console.Write("Invalid Entry, please try again: ");
-                UserFurniChoice();
+                Console.WriteLine("Invalid Entry, please try again. Press Enter to continue.");
+                Console.ReadLine();
+                UserFurnChoice();
             }
         }
     }

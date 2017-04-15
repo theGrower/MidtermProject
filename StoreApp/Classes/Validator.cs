@@ -11,7 +11,7 @@ namespace StoreApp.Classes
 
     class Validator
     {
-        public static StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice ParceFurnChoice(string s)
+        public static FurnitureEnums.FurnitureEnums.UserFurnChoice ParseFurnChoice(string s)
         {
             switch (s.ToLower())
             {
@@ -21,7 +21,7 @@ namespace StoreApp.Classes
                 case "desk":
                 case "desks":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.DESK;
+                        return FurnitureEnums.FurnitureEnums.UserFurnChoice.DESK;
                     }
                 case "f":
                 case "fi":
@@ -30,7 +30,7 @@ namespace StoreApp.Classes
                 case "files":
                 case "file ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.FILES;
+                        return FurnitureEnums.FurnitureEnums.UserFurnChoice.FILES;
                     }
                 case "s":
                 case "se":
@@ -43,7 +43,7 @@ namespace StoreApp.Classes
                 case "seatign":
                 case "seeting":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.SEATING;
+                        return FurnitureEnums.FurnitureEnums.UserFurnChoice.SEATING;
                     }
                 case "t":
                 case "ta":
@@ -54,16 +54,16 @@ namespace StoreApp.Classes
                 case "tables":
                 case "table ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.TABLES;
+                        return FurnitureEnums.FurnitureEnums.UserFurnChoice.TABLES;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFurnChoice.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.UserFurnChoice.NOT_RECOGNIZED;
                     }
             }
         }
 
-        public static StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice ParceDeskChoice(string s)
+        public static FurnitureEnums.FurnitureEnums.UserDeskChoice ParseDeskChoice(string s)
         {
             switch (s.ToLower())
             {
@@ -74,7 +74,7 @@ namespace StoreApp.Classes
                 case "answe":
                 case "answer":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.ANSWER;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.ANSWER;
                     }
                 case "o":
                 case "ol":
@@ -82,7 +82,7 @@ namespace StoreApp.Classes
                 case "olgy":
                 case "olgy ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.OLOGY;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.OLOGY;
                     }
                 case "f":
                 case "fr":
@@ -91,7 +91,7 @@ namespace StoreApp.Classes
                 case "frame":
                 case "frame ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.FRAME;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.FRAME;
                     }
                 case "c":
                 case "cs":
@@ -101,21 +101,21 @@ namespace StoreApp.Classes
                 case "escapes":
                 case "escape ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.CSCAPE;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.CSCAPE;
                     }
                 case "n":
                 case "no":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.NO;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.NO;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserDeskChoice.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.UserDeskChoice.NOT_RECOGNIZED;
                     }
             }
         }
 
-        public static StoreApp.FurnitureEnums.FurnitureEnums.UserFilesChoice ParceFilesChoice(string s)
+        public static FurnitureEnums.FurnitureEnums.UserFilesChoice ParseFilesChoice(string s)
         {
             switch (s.ToLower())
             {
@@ -127,7 +127,7 @@ namespace StoreApp.Classes
                 case "storag":
                 case "storage":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFilesChoice.STORAGE;
+                        return FurnitureEnums.FurnitureEnums.UserFilesChoice.STORAGE;
                     }
                 case "p":
                 case "pe":
@@ -137,7 +137,7 @@ namespace StoreApp.Classes
                 case "pedesta":
                 case "pedestal":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFilesChoice.PEDESTAL;
+                        return FurnitureEnums.FurnitureEnums.UserFilesChoice.PEDESTAL;
                     }
                 case "t":
                 case "to":
@@ -146,25 +146,26 @@ namespace StoreApp.Classes
                 case "tower":
                 case "tower ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFilesChoice.TOWER;
+                        return FurnitureEnums.FurnitureEnums.UserFilesChoice.TOWER;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserFilesChoice.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.UserFilesChoice.NOT_RECOGNIZED;
                     }
             }
         }
-        public static StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice ParceSeatChoice(string s)
+
+        public static FurnitureEnums.FurnitureEnums.UserSeatChoice ParseSeatChoice(string s)
         {
             switch (s.ToLower())
-            { 
+            {
                 case "l":
                 case "le":
                 case "lea":
                 case "leap":
                 case "leap ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.LEAP;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.LEAP;
                     }
                 case "s":
                 case "se":
@@ -174,14 +175,14 @@ namespace StoreApp.Classes
                 case "sensor":
                 case "sensors":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.SENSOR;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.SENSOR;
                     }
                 case "o":
                 case "ob":
                 case "obi":
                 case "obi ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.OBI;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.OBI;
                     }
                 case "n":
                 case "no":
@@ -190,7 +191,7 @@ namespace StoreApp.Classes
                 case "no be":
                 case "nobe ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.NOBE;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.NOBE;
                     }
                 case "g":
                 case "ge":
@@ -200,16 +201,16 @@ namespace StoreApp.Classes
                 case "gestur":
                 case "gesture":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.GESTURE;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.GESTURE;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserSeatChoice.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.UserSeatChoice.NOT_RECOGNIZED;
                     }
             }
         }
 
-        public static StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice ParceTablesChoice(string s)
+        public static FurnitureEnums.FurnitureEnums.UserTablesChoice ParseTablesChoice(string s)
         {
             switch (s.ToLower())
             {
@@ -221,7 +222,7 @@ namespace StoreApp.Classes
                 case "potrer":
                 case "potrero":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice.POTRERO;
+                        return FurnitureEnums.FurnitureEnums.UserTablesChoice.POTRERO;
                     }
                 case "b":
                 case "ba":
@@ -231,7 +232,7 @@ namespace StoreApp.Classes
                 case "ballet":
                 case "balet":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice.BALLET;
+                        return FurnitureEnums.FurnitureEnums.UserTablesChoice.BALLET;
                     }
                 case "g":
                 case "gl":
@@ -240,7 +241,7 @@ namespace StoreApp.Classes
                 case "glass":
                 case "glass ":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice.GLASS;
+                        return FurnitureEnums.FurnitureEnums.UserTablesChoice.GLASS;
                     }
                 case "u":
                 case "un":
@@ -251,29 +252,29 @@ namespace StoreApp.Classes
                 case "universa":
                 case "universal":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice.UNIVERSAL;
+                        return FurnitureEnums.FurnitureEnums.UserTablesChoice.UNIVERSAL;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.UserTablesChoice.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.UserTablesChoice.NOT_RECOGNIZED;
                     }
             }
         }
 
-        public static StoreApp.FurnitureEnums.FurnitureEnums.color ParceColorChoice(string s)
+        public static FurnitureEnums.FurnitureEnums.color ParseColorChoice(string s)
         {
-            switch (s.ToLower()) 
+            switch (s.ToLower())
             {
                 case "bla":
                 case "blac":
                 case "black":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.black;
+                        return FurnitureEnums.FurnitureEnums.color.black;
                     }
                 case "blu":
                 case "blue":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.blue;
+                        return FurnitureEnums.FurnitureEnums.color.blue;
                     }
                 case "g":
                 case "gr":
@@ -281,7 +282,7 @@ namespace StoreApp.Classes
                 case "gree":
                 case "green":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.green;
+                        return FurnitureEnums.FurnitureEnums.color.green;
                     }
                 case "o":
                 case "or":
@@ -290,7 +291,7 @@ namespace StoreApp.Classes
                 case "orang":
                 case "orange":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.orange;
+                        return FurnitureEnums.FurnitureEnums.color.orange;
                     }
                 case "p":
                 case "pi":
@@ -298,7 +299,7 @@ namespace StoreApp.Classes
                 case "pink":
                 case "victoriasecret":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.pink;
+                        return FurnitureEnums.FurnitureEnums.color.pink;
                     }
                 case "w":
                 case "wh":
@@ -306,11 +307,163 @@ namespace StoreApp.Classes
                 case "whit":
                 case "white":
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.white;
+                        return FurnitureEnums.FurnitureEnums.color.white;
                     }
                 default:
                     {
-                        return StoreApp.FurnitureEnums.FurnitureEnums.color.NOT_RECOGNIZED;
+                        return FurnitureEnums.FurnitureEnums.color.NOT_RECOGNIZED;
+                    }
+            }
+        }
+
+        public static FurnitureEnums.FurnitureEnums.DeskCenterDrawer ParseCenterDrawer(string s)
+        {
+            switch (s.ToLower())
+            {
+                case "y":
+                case "ye":
+                case "yes":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskCenterDrawer.YES;
+                    }
+                case "n":
+                case "no":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskCenterDrawer.NO;
+                    }
+                default:
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskCenterDrawer.NOT_RECOGNIZED;
+                    }
+            }
+        }
+
+        public static FurnitureEnums.FurnitureEnums.DeskDepth ParseDeskDept(string s)
+        {
+            switch (s.ToLower())
+            {
+                case "24":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskDepth._24;
+                    }
+                case "36":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskDepth._36;
+                    }
+                default:
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskDepth.NOT_RECOGNIZED;
+                    }
+            }
+        }
+
+        public static FurnitureEnums.FurnitureEnums.DeskWidth ParseDeskWidth(string s)
+        {
+            switch (s.ToLower())
+            {
+                case "48":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskWidth._48;
+                    }
+                case "60":
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskWidth._60;
+                    }
+                default:
+                    {
+                        return FurnitureEnums.FurnitureEnums.DeskWidth.NOT_RECOGNIZED;
+                    }
+            }
+        }
+
+        public static FurnitureEnums.FurnitureEnums.pullsStyle ParsePullsStyle(string s)
+        {
+            switch (s.ToLower()) 
+            {
+                case "b":
+                case "ba":
+                case "bar":
+                {
+                    return FurnitureEnums.FurnitureEnums.pullsStyle.bar;
+                }
+                case "co":
+                case "con":
+                case "cont":
+                case "conte":
+                case "contem":
+                case "contemp":
+                case "contempo":
+                case "contempor":
+                case "contempora":
+                case "contemporar":
+                case "contemporary":
+                {
+                    return FurnitureEnums.FurnitureEnums.pullsStyle.contemporary;
+                }
+                case "cs":
+                case "csc":
+                case "csca":
+                case "casap":
+                case "casape":
+                {
+                    return FurnitureEnums.FurnitureEnums.pullsStyle.cscape;
+                }
+                case "j":
+                case "ja":
+                case "jazz":
+                case "jaz":
+                {
+                    return FurnitureEnums.FurnitureEnums.pullsStyle.jazz;
+                }
+                default:
+                {
+                    return FurnitureEnums.FurnitureEnums.pullsStyle.NOT_RECOGNIZED;
+                }
+            }
+        }
+
+        public static FurnitureEnums.FurnitureEnums.pullsColor ParsePullsColor(string s)
+        {
+            switch (s.ToLower()) //black, brushed, chrome, silver,
+            {
+                case "bl":
+                case "bla":
+                case "blac":
+                case "black":
+                    {
+                        return FurnitureEnums.FurnitureEnums.pullsColor.black;
+                    }
+                case "br":
+                case "bru":
+                case "brus":
+                case "brush":
+                case "brushe":
+                case "brushed":
+                    {
+                        return FurnitureEnums.FurnitureEnums.pullsColor.brushed;
+                    }
+                case "c":
+                case "ch":
+                case "chr":
+                case "chro":
+                case "chrom":
+                case "chrome":
+                    {
+                        return FurnitureEnums.FurnitureEnums.pullsColor.chrome;
+                    }
+                case "s":
+                case "si":
+                case "sil":
+                case "silv":
+                case "silvr":
+                case "silver":
+
+                    {
+                        return FurnitureEnums.FurnitureEnums.pullsColor.silver;
+                    }
+                default:
+                    {
+                        return FurnitureEnums.FurnitureEnums.pullsColor.NOT_RECOGNIZED;
                     }
             }
         }

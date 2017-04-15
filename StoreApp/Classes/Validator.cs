@@ -29,7 +29,7 @@ namespace StoreApp.Classes
                     case "ol":
                     case "olo":
                     case "olog":
-                    case "ology ":
+                    case "ology":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.OLOGY;
                         }
@@ -39,6 +39,7 @@ namespace StoreApp.Classes
                     case "fram":
                     case "frame":
                     case "frame ":
+                    case "frame 1":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.FRAME_1;
                         }
@@ -47,8 +48,7 @@ namespace StoreApp.Classes
                     case "csc":
                     case "csca":
                     case "cscap":
-                    case "escapes":
-                    case "escape ":
+                    case "cscape":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.CSCAPE;
                         }
@@ -77,7 +77,6 @@ namespace StoreApp.Classes
                     case "tow":
                     case "towe":
                     case "tower":
-                    case "tower ":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.TOWER;
                         }
@@ -85,7 +84,6 @@ namespace StoreApp.Classes
                     case "le":
                     case "lea":
                     case "leap":
-                    case "leap ":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.LEAP;
                         }
@@ -146,7 +144,6 @@ namespace StoreApp.Classes
                     case "gla":
                     case "glas":
                     case "glass":
-                    case "glass ":
                         {
                             return FurnitureEnums.FurnitureEnums.AllFurnObjects.GLASS;
                         }

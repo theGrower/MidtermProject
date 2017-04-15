@@ -43,19 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Cart.cs" />
-    <Compile Include="Classes\Desk.cs" />
-    <Compile Include="Classes\Files.cs" />
     <Compile Include="Classes\Furniture.cs" />
-    <Compile Include="Classes\Seating.cs" />
-    <Compile Include="Classes\Tables.cs" />
     <Compile Include="Classes\Validator.cs" />
     <Compile Include="FurnitureEnums\FurnitureEnums.cs" />
-    <Compile Include="Methods\DeskChoice.cs" />
-    <Compile Include="Methods\FilesChoice.cs" />
-    <Compile Include="Methods\FurnChoice.cs" />
-    <Compile Include="Methods\SeatChoice.cs" />
-    <Compile Include="Methods\TablesChoice.cs" />
+    <Compile Include="Methods\Greeting.cs" />
+    <Compile Include="Methods\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,9 +10,8 @@ namespace StoreApp.Classes
     {
         private string type;
         private string name;
-        private decimal price;
+        private double price;
         private string description;
-        private int modelNum;
 
         public Furniture()
         {
@@ -20,16 +19,14 @@ namespace StoreApp.Classes
             this.name = null;
             this.price = 0;
             this.description = null;
-            this.modelNum = 0;
         }
 
-        public Furniture(string type, string name, decimal price, string descriptions)
+        public Furniture(string type, string name, double price, string descriptions)
         {
             this.type = type;
             this.name = name;
             this.price = price;
             this.description = description;
-            this.modelNum = modelNum;
         }
         public string Type
         {
@@ -41,7 +38,7 @@ namespace StoreApp.Classes
             get { return name; }
             set { name = value; }
         }
-        public decimal Price
+        public double Price
         {
             get { return price; }
             set { price = value; }
@@ -50,11 +47,6 @@ namespace StoreApp.Classes
         {
             get { return description; }
             set { description = value; }
-        }
-        public int ModelNum
-        {
-            get { return modelNum; }
-            set { modelNum = value; }
         }
     }
 }

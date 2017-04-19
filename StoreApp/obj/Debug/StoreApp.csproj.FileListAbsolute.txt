@@ -8,3 +8,9 @@ C:\Git\MidtermProject\StoreApp\obj\Debug\StoreApp.pdb
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.exe
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.pdb
 C:\Users\ghouck\Documents\GitHub\MidtermProject\StoreApp\obj\Debug\StoreApp.csprojResolveAssemblyReference.cache
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\bin\Debug\StoreApp.exe.config
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\obj\Debug\StoreApp.exe
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\obj\Debug\StoreApp.pdb
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\bin\Debug\StoreApp.exe
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\bin\Debug\StoreApp.pdb
+C:\Users\jeffr\Documents\Bootcamp\Labs and Excercises\TryingToFixMidtermProject\StoreApp\obj\Debug\StoreApp.csprojResolveAssemblyReference.cache

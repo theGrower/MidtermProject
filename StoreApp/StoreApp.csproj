@@ -46,8 +46,9 @@
     <Compile Include="Classes\Furniture.cs" />
     <Compile Include="Classes\Validator.cs" />
     <Compile Include="FurnitureEnums\FurnitureEnums.cs" />
-    <Compile Include="Methods\Greeting.cs" />
-    <Compile Include="Methods\Order.cs" />
+    <Compile Include="Classes\BuildInventory.cs" />
+    <Compile Include="Classes\Greeting.cs" />
+    <Compile Include="Classes\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

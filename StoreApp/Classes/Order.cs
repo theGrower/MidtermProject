@@ -110,6 +110,7 @@ namespace StoreApp.Classes
                 }
                 else if (Validator.ParseFurnObjects(userChoice) == FurnitureEnums.FurnitureEnums.AllFurnObjects.PAY)
                 {
+                    Console.Clear();
                     double grandTotal = 0;
                     foreach (var product in userOrder)
                     {
